@@ -1,0 +1,22 @@
+.img{
+	content: "";
+    position: absolute;
+    overflow: hidden;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.55)),url('../static/img/bg3.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */
+    height: 110%; width: 105%; /* Using Glen Maddern's trick /via @mente */
+    /* don't forget to use the prefixes you need */
+    transform-origin: top right;
+    -webkit-filter: blur(1px);
+    margin-top: -10%;
+}
+
+#editor{
+    height: 500px;
+
+}
+
+.ng-scope{
+    height: 100%;
+}
