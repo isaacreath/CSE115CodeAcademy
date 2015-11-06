@@ -21,13 +21,13 @@ def add_user():
 	assignments = {}
 	num_assignments = db.assignments.count()
 
-	for i in range(1, num_assignments + 1)
+	for i in range(1, num_assignments + 1):
 		assignment_dict = {}
 		db_assignment = db.assignments.find_one({'number': 1})
 		start_code = db_assignment['start_code']
 		assignment_dict['completion'] = 'not started'
 		assignment_dict['start_code'] = start_code
-		assignment{i : assignment_dict}
+		assignments['%s'%i] = assignment_dict
 
 	user['assignments'] = assignments
 
